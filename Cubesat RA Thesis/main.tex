@@ -1,0 +1,153 @@
+\documentclass[12pt,letterpaper,oneside]{book}
+\usepackage{afitStyleFiles/afitThesis}
+\usepackage{xcolor}
+\usepackage{soul}
+\usepackage{sf298}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{pdfpages}
+\usepackage[all]{nowidow}
+\usepackage{gensymb}
+\usepackage{IEEEtrantools}
+\usepackage{multirow}
+\usepackage{bm}
+\usepackage{url}
+\def\UrlBreaks{\do\/\do-}
+\usepackage[breaklinks]{hyperref}
+
+\input{Thesis/Preamble/titlePage}
+\input{Thesis/Preamble/myFigures}
+%\input{Thesis/Preamble/myTables}
+\def\Plus{\texttt{+ }}
+\def\Minus{\texttt{- }}
+
+\newenvironment{conditions*}
+  {\par\vspace{\abovedisplayskip}\noindent
+   \tabularx{\columnwidth}{>{$}l<{$} @{${}={}$} >{\raggedright\arraybackslash}X}}
+  {\endtabularx\par\vspace{\belowdisplayskip}}
+  
+\newenvironment{conditions}
+  {\par\vspace{\abovedisplayskip}\noindent\begin{tabular}{>{$}l<{$} @{${}={}$} l}}
+  {\end{tabular}\par\vspace{\belowdisplayskip}}
+
+
+\begin{document}
+%
+\frontmatter\flyleaf
+    \disclaimerpage
+    \titlepageAFIT
+    \committeepage
+    \input{Thesis/Front/abstract}
+    \input{Thesis/Front/acknowledgements}
+    \tableofcontents
+    \listoffigures
+    \listoftables
+    \listofabbreviations
+
+\mainmatter
+	\chapter{Introduction}
+    \label{Intro}
+    	\section{General Issue}
+   		\label{geniss}
+    	\input{Thesis/Introduction/General_Issue}
+    	
+    	\section{Problem Statement}
+   		\label{probst}
+    	\input{Thesis/Introduction/probstate}
+    	
+    	\section{Scope}
+        \label{Scope}
+        \input{Thesis/Introduction/Scope}
+        
+    	\section{Research Objectives and Questions}
+    	\label{ObjandQs}
+        \input{Thesis/Introduction/Research_Objective_and_Questions}
+        
+        \section{Assumptions and Limitations}
+        \label{Assums_Limits}
+        \input{Thesis/Introduction/Assumptions_Limitations}
+        
+        \section{Preview}
+        \label{preview}
+        \input{Thesis/Introduction/Preview}
+
+	\chapter{Literature Review}
+    \label{LitReview}
+ 
+        \section{Overview}
+        \label{LitOver}
+   		\input{Thesis/Literature_Review/Overview}
+        
+        \section{CubeSats}
+        \label{CubeSats}
+   		\input{Thesis/Literature_Review/CubeSats}
+   		
+   	    \section{Model Based Systems Engineering}
+        \label{MBSE}
+   		\input{Thesis/Literature_Review/MBSE}
+
+   	    \section{Reference Architectures}
+        \label{RefArch}
+   		\input{Thesis/Literature_Review/RefArch}
+
+   		\section{Existing Work}
+        \label{Existing_Work}
+   		\input{Thesis/Literature_Review/Existing_Work}
+   		
+        \section{Summary}
+        \label{Ch2Sum}
+   		\input{Thesis/Literature_Review/Ch2Sum}
+        
+    \chapter{Methodology}
+    \label{Methodology}
+
+    	\section{Overview}
+        \label{MethOverveiw}
+        \input{Thesis/Methodology/Overview.tex}
+        
+        \section{Summary}
+        \label{Ch3Sum}
+   		\input{Thesis/Methodology/Ch3Sum}
+        
+    \chapter{Analysis and Results}
+    \label{analysis}
+    	\section{Overview}
+        \label{subanalysis}
+        \input{Thesis/Analysis_and_Results/Overview.tex}
+
+    	\section{Section Name}
+        \label{sectionname}
+        \input{Thesis/Analysis_and_Results/Section Name.tex}
+        
+        \section{Summary}
+        \label{Ch4Sum}
+   		\input{Thesis/Analysis_and_Results/Ch4Sum.tex}
+        
+    \chapter{Conclusion}
+    \label{conclusion}
+        \section{Overview}
+        \label{conclusionoverview}
+        \input{Thesis/Conclusion/Overview.tex}
+    	
+    	\section{Lessons Learned}
+        \label{LessonsLearned}
+        \input{Thesis/Conclusion/LessonsLearned.tex}
+        
+        \section{Future Work}
+        \label{FutureWork}
+        \input{Thesis/Conclusion/FutureWork.tex}
+        
+        \section{Final Thoughts}
+        \label{finalthoughts}
+        \input{Thesis/Conclusion/FinalThoughts.tex}
+        
+    \appendix
+     	
+\backmatter
+	\singlespace
+    \bibliographystyle{plainnat}
+    \bibliography{bibliography}
+    \clearpage
+
+    \input{Thesis/Back/SF298}
+\end{document}
