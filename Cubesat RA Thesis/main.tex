@@ -7,6 +7,7 @@
 \usepackage{multirow}
 \usepackage{pdfpages}
 \usepackage[all]{nowidow}
+\usepackage{textcomp}
 \usepackage{gensymb}
 \usepackage{IEEEtrantools}
 \usepackage{multirow}
@@ -14,6 +15,8 @@
 \usepackage{url}
 \def\UrlBreaks{\do\/\do-}
 \usepackage[breaklinks]{hyperref}
+
+
 
 \input{Thesis/Preamble/titlePage}
 \input{Thesis/Preamble/myFigures}
@@ -67,6 +70,10 @@
         \label{Assums_Limits}
         \input{Thesis/Introduction/Assumptions_Limitations}
         
+        \section{Approach}
+        \label{Approach}
+        \input{Thesis/Introduction/Approach}
+        
         \section{Preview}
         \label{preview}
         \input{Thesis/Introduction/Preview}
@@ -93,6 +100,14 @@
    		\section{Existing Work}
         \label{Existing_Work}
    		\input{Thesis/Literature_Review/Existing_Work}
+ 
+    	\section{Validation Tools}
+        \label{Validation ruleset}
+   		\input{Thesis/Literature_Review/Validation}
+   		
+   		\section{Document Generators}
+        \label{Document Generators}
+   		\input{Thesis/Literature_Review/Document Generators}
    		
         \section{Summary}
         \label{Ch2Sum}
@@ -102,22 +117,66 @@
     \label{Methodology}
 
     	\section{Overview}
-        \label{MethOverveiw}
+        \label{MethOverview}
         \input{Thesis/Methodology/Overview.tex}
+        
+    	\section{Status Quo}
+        \label{StatusQuo}
+        \input{Thesis/Methodology/Status Quo}
+
+    	\section{Developing the Reference Architecture}
+        \label{Development}
+        \input{Thesis/Methodology/Development}
+        
+    	\section{Instructor Feedback}
+        \label{InstFeedback}
+        \input{Thesis/Methodology/Feedback}
+        
+    	\section{Tool Validation}
+        \label{ToolValidation}
+        \input{Thesis/Methodology/Tool Validation}
         
         \section{Summary}
         \label{Ch3Sum}
    		\input{Thesis/Methodology/Ch3Sum}
         
     \chapter{Analysis and Results}
-    \label{analysis}
+    \label{analysisandresults}
     	\section{Overview}
-        \label{subanalysis}
+        \label{subanalysisandresults}
         \input{Thesis/Analysis_and_Results/Overview.tex}
 
-    	\section{Section Name}
-        \label{sectionname}
-        \input{Thesis/Analysis_and_Results/Section Name.tex}
+    	\section{Containment Tree}
+        \label{ContainmentTree}
+        \input{Thesis/Analysis_and_Results/Containment Tree}
+
+    	\section{Guidance}
+        \label{Guidance}
+        \input{Thesis/Analysis_and_Results/Guidance}
+        
+    	\section{Requirements}
+        \label{Requirements}
+        \input{Thesis/Analysis_and_Results/Requirements}
+        
+    	\section{Structure}
+        \label{Structure}
+        \input{Thesis/Analysis_and_Results/Structure}
+        
+    	\section{Behavior}
+        \label{Behavior}
+        \input{Thesis/Analysis_and_Results/Behavior}
+        
+    	\section{Analysis}
+        \label{Analysis}
+        \input{Thesis/Analysis_and_Results/Analysis}
+        
+        \section{Component Library}
+        \label{ComponentLibrary}
+        \input{Thesis/Analysis_and_Results/Component Library}
+        
+        \section{Document Generators}
+        \label{DocGenerators}
+        \input{Thesis/Analysis_and_Results/Document Generators}
         
         \section{Summary}
         \label{Ch4Sum}
@@ -144,10 +203,10 @@
     \appendix
      	
 \backmatter
+    
 	\singlespace
-    \bibliographystyle{plainnat}
+	\bibliographystyle{unsrtnat}
     \bibliography{bibliography}
     \clearpage
-
     \input{Thesis/Back/SF298}
 \end{document}
