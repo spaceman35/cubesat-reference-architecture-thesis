@@ -1,4 +1,4 @@
-\ProvidesPackage{afitThesis}
+\ProvidesPackage{afitStyleFiles/afitThesis}
 
 %==================================================================
 %																			
@@ -13,7 +13,9 @@
 \usepackage{flafter}
 \usepackage{amssymb,amsmath,amsfonts}
 \usepackage{theorem}
-\usepackage[round]{natbib}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[square, numbers]{natbib}
 %\usepackage{biblatex} 
 \usepackage{varioref} 
 \usepackage{tocbibind} 
@@ -27,6 +29,7 @@
 \usepackage{multicol}
 %\usepackage[titletoc]{appendix}
 \usepackage{ifpdf}
+\usepackage{multirow}
 
 \ifpdf
 \usepackage[pdftex]{graphicx}
@@ -35,7 +38,6 @@
 \usepackage{graphicx}
 \DeclareGraphicsExtensions{.eps}
 \fi
-
 
 %% Define default document values
 \geometry{top=1in,bottom=1.25in,left=1.25in,right=1.25in}
@@ -191,7 +193,7 @@ copyright protection in the United States.}
         \singlespace
         \setlength{\columnsep}{3mm}
         Sean R. Kelly
-        Capt, USAF
+        Capt, USSF
         
         \end{center}
 	    \@docdesignator\\[30pt]
@@ -265,7 +267,7 @@ copyright protection in the United States.}
         \singlespace
         Sean R. Kelly
         
-        Capt, USAF
+        Capt, USSF
         \end{center}
 	    \vskip 1cm
 	    \@graduationdate
@@ -307,14 +309,14 @@ copyright protection in the United States.}
     \par%
   \endgroup
 }
-
+\author{Sean Kelly}
 \def\author@line{\par 
   \begingroup%
   \singlespace
         \begin{center}
         Sean R. Kelly
         
-        Capt, USAF
+        Capt, USSF
         \end{center}
     \par
   \endgroup
@@ -947,7 +949,7 @@ copyright protection in the United States.}
 % 
 % Change the default of square brackets to arabic numbers
  
-\renewcommand\@biblabel[1]{#1.}
+%\renewcommand\@biblabel[1]{#1.}
 
 
 
