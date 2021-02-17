@@ -1,0 +1,26 @@
+This research was significant due to the current emphasis in the US Air Force and US Space Force on Digital Engineering \citep{Roper2019}. By using this Reference Architecture, engineers will have more experience using a model as the "source of truth" for analysis, requirements, and as the basis for traditional documentation. Furthermore, several new concepts and functions were explored in this Reference Architecture that are now being used in other models, such as the methodology for generating custom documents, using a validation suite, and establishing a custom Value Type library instead of the provided ISO-8000 library. In addition, this model is being used as the platform for more complex integration with MATLAB and STK by other researchers at AFIT.
+
+\noindent As stated in Chapter \ref{Intro}, the research objectives were as follows:
+
+\begin{enumerate}
+\item{Create a practical and useful Reference Architecture for rapidly-prototyping CubeSat designs.}
+\item{Create easy-to-use document generators that use model elements to generate traditional system level review documentation.}
+\item{Present this Reference Architecture to AFIT instructors for feedback.}
+\item{Lay the groundwork for future analysis work with STK and MATLAB integration for more comprehensive mission analysis using model elements.}
+\end{enumerate}
+
+These research objectives have all been met over the course of this project. In addition, the following research questions were considered:
+
+\begin{enumerate}
+\item{\textit{What are the tools necessary to perform mission modeling using model-based systems engineering?}}\\
+The mission modeling effort is being done using this CubeSat Reference Architecture to provide all inputs into constraint blocks that are formatted to integrate with MATLAB and STK. 
+\item{\textit{What viewpoints are most useful to common stakeholders?}}\\
+Most stakeholders still prefer the traditional documentation, which required narrative sections to be built into the document generators in addition to using the system model elements. Additionally, stakeholder prefer higher level viewpoints with less clutter. Detailed subsystem details have been limited to the appropriate subsystem diagrams instead of crowding the main physical decomposition. Limiting the number of blocks on diagrams led to better views for presentations, even though it was quite difficult to simplify some diagrams. 
+\item{\textit{How can useable documentation be generated from only model elements, keeping the source of truth within the model?}}\\
+Custom work using Apache's Velocity Template Language was needed to generate polished documents using model elements. The built-in tools within Cameo are not sufficient, so this was a substantial effort to code and document.
+\item{\textit{What needs to be done in the model to allow for external tools (STK, MATLAB, etc.) to interact with the MBSE tool?}}\\
+The most important thing was to establish a library of value properties that worked well with MATLAB and STK. Lessons learned with custom units and with naming conventions led to the conventions used in the Reference Architecture so that these errors are avoided. 
+\item{\textit{Can cloud-based collaboration improve the MBSE design process for interdisciplinary teams?}}\\
+The cloud-based collaboration was extremely valueable. Lessons learned for this process have been handed down to the first cohort of students to use this environment in classes. There are some inherent difficulties with storing sensitive information in the cloud, but those issues are being worked out due to the benefits of the cloud-environment. 
+
+\end{enumerate}
